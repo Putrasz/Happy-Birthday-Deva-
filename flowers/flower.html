@@ -319,10 +319,20 @@
         </div>
       </div>
     </div>
-    <audio id="background-music" autoplay>
+    <audio id="background-music">
       <source src="../assets/musik.mp3" type="audio/mp3" />
-      Your browser does not support the audio element.
     </audio>
+    <script>
+      // Function to play the background music
+      function playMusic() {
+          const backgroundMusic = document.getElementById('background-music');
+          backgroundMusic.play();
+      }
+
+      // Event listener for 'click' or 'touchstart' event on the entire page
+      document.addEventListener('click', playMusic);
+      document.addEventListener('touchstart', playMusic);
+  </script>
     <script src="main.js"></script>
   </body>
 </html>
