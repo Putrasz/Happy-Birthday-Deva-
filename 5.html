@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Welcome Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="flowers/main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="welcome-box">
+            <p>Aku ada hadiah lain meskipun kecil 😊</p>
+            <button onclick="goToFlowerPage()">Next</button>
+        </div>
+    </div>
+
+    <script>
+        function goToFlowerPage() {
+            // Notifikasi alert
+            alert("You are about to move to the flower page.");
+            
+            // Setelah alert, pindah ke halaman flowers/flower.html
+            window.location.href = "flowers/flower.html";
+        }
+    </script>
+</body>
+</html>

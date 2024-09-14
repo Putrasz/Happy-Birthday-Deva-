@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simple Welcome Page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="flowers/main.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="welcome-box">
-            <p>Haiii 👋</p>
-            <button><a href="2.html">Next</a></button>
-        </div>
+      <div class="welcome-box">
+        <p>Haiii 👋</p>
+        <button onclick="goToPage('2.html')">Next</button>
+      </div>
     </div>
+    <audio id="pop-sound">
+      <source src="assets/pop.mp3" type="audio/mp3" />
+      Your browser does not support the audio element.
+    </audio>
+    <script>
+      function goToPage(page) {
+        const popSound = document.getElementById("pop-sound");
+        popSound.play();
 
-    <script src="script.js"></script>
-</body>
+        setTimeout(() => {
+          window.location.href = "2.html";
+        }, 500); // Delay of 300 milliseconds
+      }
+    </script>
+  </body>
 </html>

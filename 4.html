@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Welcome Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="flowers/main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="welcome-box">
+            <p>ya 👋</p>
+            <button onclick="goToPage('5.html')">Next</button>
+        </div>
+      </div>
+      <audio id="pop-sound">
+        <source src="assets/pop.mp3" type="audio/mp3" />
+        Your browser does not support the audio element.
+      </audio>
+      <script>
+        function goToPage(page) {
+          const popSound = document.getElementById("pop-sound");
+          popSound.play();
+  
+          setTimeout(() => {
+            window.location.href = "5.html";
+          }, 500); // Delay of 300 milliseconds
+        }
+      </script>
+</body>
+</html>

@@ -5,7 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url(IMG/bg.jpg);
+    background-image: url(assets/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: Arial, sans-serif;
@@ -57,7 +57,7 @@ button:hover {
 /* Responsive design for screens smaller than 600px (phone screens) */
 @media screen and (max-width: 600px) {
     body {
-        background-image: url(IMG/bg2.jpg);
+        background-image: url(assets/bg2.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
