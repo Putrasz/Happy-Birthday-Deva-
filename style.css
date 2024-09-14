@@ -87,11 +87,11 @@ button a {
     }
 
     .welcome-box p {
-        font-size: 18px; /* Adjust font size */
+        font-size: 12px; /* Adjust font size */
     }
 
     button {
-        padding: 10px 20px; /* Adjust button padding */
-        font-size: 16px;
+        padding: 8px 15px; /* Adjust button padding */
+        font-size: 15px;
     }
 }
