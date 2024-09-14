@@ -9,9 +9,11 @@ body {
     background-image: url(assets/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Poppins', sans-serif; /* Using a more modern font */
+    font-family: "Poppins", system-ui;
+    font-weight: 400;
+    font-style: normal;
     background-color: #f5f5f5; /* Soft background color fallback */
-}
+} 
 
 /* Container to center the content */
 .container {
