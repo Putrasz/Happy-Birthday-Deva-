@@ -83,6 +83,7 @@ button a {
     .welcome-box {
         width: 85%; /* Make box more flexible for small screens */
         padding: 20px;
+        padding-left: 20px;
     }
 
     .welcome-box p {
